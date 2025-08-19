@@ -1,0 +1,4 @@
+<div *ngIf="orientation == 'up'" class="triangle-topleft" [style]="'border-top: 50px solid ' + color"></div>
+<ion-icon *ngIf="orientation == 'up'" name="{{icon}}" class="top-icon"></ion-icon>
+<div *ngIf="orientation == 'down'" class="triangle-bottomright" [style]="'border-bottom: 50px solid ' + color"></div>
+<ion-icon *ngIf="orientation == 'down'" name="{{icon}}" class="bottom-icon"></ion-icon>

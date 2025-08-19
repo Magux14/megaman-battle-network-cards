@@ -1,0 +1,24 @@
+<span [class]="printMode? 'card-container': 'card-container'">
+
+  <div class="image-container">
+    <img [src]="'/assets/img/' + name + '.webp'">
+    <span *ngIf="damage" class="status-damage-label">
+      D {{damage}}
+    </span>
+  </div>
+
+  <div class="name-container">
+    {{name | uppercase}}
+  </div>
+
+  <div *ngIf="desc" class="description-container">
+    {{desc}}
+  </div>
+
+  <app-range *ngIf="range" [range]="range" />
+
+  <div class="image-down-part-container">
+    <img [src]="'/assets/img/chip-down.webp'" />
+  </div>
+
+</span>

@@ -1,0 +1,15 @@
+<div class="range__container">
+  <div *ngFor="let row of range" class="range__row">
+    <div *ngFor="let cell of row; let i = index" class="range__cell"
+      [ngClass]="{'range__cell--blue': i < 3, 'range__cell--red': i >= 3, 'range__cell--yellow': cell == 'd'}">
+      <!-- <span *ngIf="i < 3" class="range__cell--blue">
+
+      </span>
+      <span *ngIf="i > 3" class="range__cell--red">
+
+      </span> -->
+
+      <img *ngIf="cell == 'm'" src="/assets/img/mega-icon.webp" class="range__mega-icon">
+    </div>
+  </div>
+</div>

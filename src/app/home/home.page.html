@@ -1,0 +1,30 @@
+<ion-content>
+    <ion-button *ngIf="!printMode" (click)="printMode = !printMode" [disabled]="printing">Print Mode</ion-button>
+    <ion-button *ngIf="printMode" (click)="printMode = !printMode" [disabled]="printing">Cancel</ion-button>
+    <ion-button *ngIf="printMode" (click)="print()" [disabled]="printing">PRINT</ion-button>
+    <ion-spinner *ngIf="printing"></ion-spinner>
+    <!-- <ion-button (click)="printToPDF()">Print to PDF</ion-button>
+    <span id="main-content">
+        <ion-row>
+            <ion-col *ngFor="let card of lstAllCards">
+                <card [name]="card.name" [desc]="card.desc" [type]="card.type" />
+            </ion-col>
+            <ion-col *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14]">
+                <card [name]="denyCard.name" [desc]="denyCard.desc" [type]="denyCard.type" />
+            </ion-col>
+        </ion-row>
+    </span> -->
+    <div class="flex-container">
+
+        <card *ngFor="let card of lstAllCards" [damage]="card.damage" [name]="card.name" [desc]="card.desc"
+            [type]="card.type" [printMode]="printMode" [range]="card.range" class="print-card" data-type="{{card.type}}"
+            [img]="card.name" />
+
+
+        <!-- <card *ngFor="let card of lstAllCards" [name]="card.name" [desc]="card.desc" [type]="card.type"
+            [printMode]="printMode" class="print-card" data-type="{{card.type}}" /> -->
+
+        <!-- <card *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14]" [name]="denyCard.name" [desc]="denyCard.desc"
+    [type]="denyCard.type" [printMode]="printMode" class="print-card" data-type="{{denyCard.type}}"/> -->
+    </div>
+</ion-content>
