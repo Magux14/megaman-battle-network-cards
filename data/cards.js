@@ -156,19 +156,19 @@ export const lstNormalCards = [
     },
     {
         name: 'recover 120',
-        desc: '',
+        desc: 'recupera 120 de vida',
         type: '',
         damage: 0,
     },
     {
         name: 'recover 50',
-        desc: '',
+        desc: 'recupera 50 de vida',
         type: '',
         damage: 0,
     },
     {
         name: 'recover 80',
-        desc: '',
+        desc: 'recupera 80 de vida',
         type: '',
         damage: 0,
     },
