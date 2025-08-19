@@ -218,7 +218,7 @@ export const lstNormalCards = [
     },
     {
         name: 'super gard',
-        desc: 'Utiliza este chip para bloquear el daño de cualquier ataque',
+        desc: 'Utiliza este chip para bloquear el daño de cualquier ataque, jugar en cualquier momento',
         type: '',
         damage: 0,
     },
@@ -304,5 +304,32 @@ export const lstNormalCards = [
             ['', '', 'm', 'd', 'd', 'd'],
             ['', '', '', 'd', 'd', 'd'],
         ]
+    },
+    {
+        name: 'shadowman',
+        type: '',
+        damage: 50,
+        range: [
+            ['', '', '', '', 'd', ''],
+            ['', '', 'm', 'd', '', 'd'],
+            ['', '', '', '', 'd', ''],
+        ]
+    },
+    {
+        name: 'roll',
+        desc: 'Despues del ataque tira el dado, recupera HP numero dado x 20',
+        type: '',
+        damage: 40,
+        range: [
+            ['', '', '', '', 'd', 'd'],
+            ['', '', 'd', 'd', '', ''],
+            ['', 'm', '', '', '', ''],
+        ]
+    },
+    {
+        name: 'cancel chip',
+        desc: 'Utilizalo para cancelar un chip utilizado por otro jugador, jugar en cualquier momento',
+        type: '',
+        damage: 0,
     }
 ]
